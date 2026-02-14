@@ -1,0 +1,175 @@
+{
+  "historical": {
+    "sources": [
+      {
+        "source": "E:/专利LLM - 副本/1216_Agent_data/CACA guidelines for holistic integrative management of prostate cancer(1).pdf",
+        "type": "file",
+        "doc_count": 34,
+        "added_at": "2025-12-17T15:34:21.710112"
+      },
+      {
+        "source": "E:/专利LLM - 副本/1216_Agent_data/CACA guidelines for holistic integrative management of prostate cancer.pdf",
+        "type": "file",
+        "doc_count": 34,
+        "added_at": "2025-12-17T15:34:21.898055"
+      },
+      {
+        "source": "E:/专利LLM - 副本/1216_Agent_data/EAU-EANM-ESTRO-ESUR-ISUP-SIOG-Guidelines-on-Prostate-Cancer-2025_updated(1).pdf",
+        "type": "file",
+        "doc_count": 251,
+        "added_at": "2025-12-17T15:34:22.962710"
+      },
+      {
+        "source": "E:/专利LLM - 副本/1216_Agent_data/EAU-EANM-ESTRO-ESUR-ISUP-SIOG-Guidelines-on-Prostate-Cancer-2025_updated.pdf",
+        "type": "file",
+        "doc_count": 251,
+        "added_at": "2025-12-17T15:34:23.984353"
+      },
+      {
+        "source": "E:/专利LLM - 副本/1216_Agent_data/NCCN-prostate(1).pdf",
+        "type": "file",
+        "doc_count": 223,
+        "added_at": "2025-12-17T15:34:25.464534"
+      },
+      {
+        "source": "E:/专利LLM - 副本/1216_Agent_data/NCCN-prostate.pdf",
+        "type": "file",
+        "doc_count": 223,
+        "added_at": "2025-12-17T15:34:26.925065"
+      },
+      {
+        "source": "E:/专利LLM - 副本/1216_Agent_data/Prostate Cancer - Patient Information(1).pdf",
+        "type": "file",
+        "doc_count": 12,
+        "added_at": "2025-12-17T15:34:27.337555"
+      },
+      {
+        "source": "E:/专利LLM - 副本/1216_Agent_data/Prostate Cancer - Patient Information.pdf",
+        "type": "file",
+        "doc_count": 12,
+        "added_at": "2025-12-17T15:34:27.707438"
+      },
+      {
+        "source": "E:/专利LLM - 副本/1216_Agent_data/坎贝尔-沃尔什-韦恩泌尿外科学第 13 版1卷.pdf",
+        "type": "file",
+        "doc_count": 1396,
+        "added_at": "2025-12-17T15:34:39.940951"
+      },
+      {
+        "source": "E:/专利LLM - 副本/1216_Agent_data/坎贝尔-沃尔什-韦恩泌尿外科学第 13 版2卷.pdf",
+        "type": "file",
+        "doc_count": 1267,
+        "added_at": "2025-12-17T15:34:48.363952"
+      },
+      {
+        "source": "E:/专利LLM - 副本/1216_Agent_data/坎贝尔-沃尔什-韦恩泌尿外科学第 13 版3卷.pdf",
+        "type": "file",
+        "doc_count": 1045,
+        "added_at": "2025-12-17T15:35:01.393239"
+      },
+      {
+        "source": "E:/专利LLM - 副本/1216_Agent_data/前列腺癌家庭防治手册.pdf",
+        "type": "file",
+        "doc_count": 123,
+        "added_at": "2025-12-17T15:35:02.513914"
+      },
+      {
+        "source": "E:/专利LLM - 副本/1216_Agent_data/吴阶平泌尿外科学：全3册.pdf",
+        "type": "file",
+        "doc_count": 6661,
+        "added_at": "2025-12-17T15:35:11.945406"
+      },
+      {
+        "source": "E:/专利LLM - 副本/1216_Agent_data/Prostate Cancer - Patient Information(1).pdf",
+        "type": "file",
+        "doc_count": 12,
+        "added_at": "2025-12-21T11:47:12.519631"
+      },
+      {
+        "source": "E:/专利LLM - 副本/1216_Agent_data/Prostate Cancer - Patient Information(1).pdf",
+        "type": "file",
+        "doc_count": 12,
+        "added_at": "2025-12-21T12:15:59.650518"
+      },
+      {
+        "source": "https://zhuanlan.zhihu.com/p/104755960",
+        "type": "url",
+        "added_at": "2025-12-03T16:35:55.691383",
+        "chunks": 1
+      },
+      {
+        "source": "https://zhuanlan.zhihu.com/p/104755960",
+        "type": "url",
+        "added_at": "2025-12-03T16:37:05.625601",
+        "chunks": 1
+      },
+      {
+        "source": "https://cn.bing.com/search?q=%E5%A6%82%E4%BD%95%E5%A4%84%E7%90%86%E5%B1%82%E7%BA%A7url%E8%8E%B7%E5%8F%96&form=ANNTH1&refig=693a1cc3b8524ba4aa0c1e1cd705c416",
+        "type": "url",
+        "added_at": "2025-12-11T15:52:36.843321",
+        "chunks": 5
+      },
+      {
+        "source": "https://cn.bing.com/search?q=%E5%A6%82%E4%BD%95%E5%A4%84%E7%90%86%E5%B1%82%E7%BA%A7url%E8%8E%B7%E5%8F%96&form=ANNTH1&refig=693a1cc3b8524ba4aa0c1e1cd705c416",
+        "type": "url",
+        "added_at": "2025-12-11T15:57:16.773800",
+        "chunks": 5
+      },
+      {
+        "source": "https://cn.bing.com/search?q=%E5%A6%82%E4%BD%95%E5%A4%84%E7%90%86%E5%B1%82%E7%BA%A7url%E8%8E%B7%E5%8F%96&form=ANNTH1&refig=693a1cc3b8524ba4aa0c1e1cd705c416",
+        "type": "url",
+        "added_at": "2025-12-11T16:18:29.886281",
+        "chunks": 5
+      },
+      {
+        "source": "https://health.baidu.com/m/detail/ar_6466699996232002920",
+        "type": "url",
+        "added_at": "2025-12-13T14:44:13.636357",
+        "chunks": 1
+      },
+      {
+        "source": "https://drug.39.net/a/170420/5300107.html",
+        "type": "url",
+        "added_at": "2025-12-13T14:45:42.474948",
+        "chunks": 9
+      },
+      {
+        "source": "https://www.miaoshou.net/article/oJL9pnRl3r12aXg6.html",
+        "type": "url",
+        "added_at": "2025-12-13T14:57:10.180585",
+        "chunks": 8
+      },
+      {
+        "source": "C:/Users/Administrator/Desktop/test.txt",
+        "type": "file",
+        "added_at": "2025-12-13T14:58:47.265099",
+        "chunks": 1
+      },
+      {
+        "source": "E:/专利LLM/data_lib/Himawari-8静止气象卫星东北地区秸秆焚烧火点监测灵敏度分析研究_董晓锐.pdf",
+        "type": "file",
+        "added_at": "2025-12-13T15:00:30.785910",
+        "chunks": 10
+      },
+      {
+        "source": "https://zhuanlan.zhihu.com/p/420541512",
+        "type": "url",
+        "added_at": "2025-12-21T11:47:54.304802",
+        "chunks": 1
+      },
+      {
+        "source": "https://zhuanlan.zhihu.com/p/420541512",
+        "type": "url",
+        "added_at": "2025-12-21T12:17:25.874163",
+        "chunks": 1
+      }
+    ],
+    "total_chunks": 22617,
+    "last_updated": "2025-12-21T12:17:52.674506"
+  },
+  "realtime": {
+    "sources": [],
+    "total_chunks": 0,
+    "last_updated": null
+  }
+}

@@ -1,0 +1,14 @@
+.git/
+.github/
+__pycache__/
+*.pyc
+.env
+chroma_db/
+chroma_db_new/
+faiss_index/
+data/
+logs/
+.vscode/
+.idea/
+*.log
+*.tmp

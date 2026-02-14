@@ -1,0 +1,31 @@
+Article-Assistant--RAG-Telegram-Bot/
+├── 📂 chroma_db/                    # Chroma vector database storage (local development)
+├── 📂 chroma_db_new/                # New Chroma database version (migrations/backups)
+├── 📂 faiss_index/                  # FAISS vector index storage (alternative to Chroma)
+├── 📂 images/                       # Images for documentation and screenshots
+├── 📂 __pycache__/                  # Python cache files (auto-generated, ignored in git)
+├── 📂 .github/                      # GitHub configuration and workflows
+│   ├── 📜 pull_request_template.md  # Template for pull requests
+│   ├── 📂 ISSUE_TEMPLATE/           # Issue templates for bug reports and feature requests
+│   │   ├── 📜 bug_report.md         # Template for reporting bugs
+│   │   └── 📜 feature_request.md    # Template for suggesting new features
+├── 📜 .env                          # Environment variables (private - API keys, tokens)
+├── 📜 .env.example                  # Environment template (example for setup)
+├── 📜 .gitignore                    # Git ignore rules (files to exclude from version control)
+├── 📜 LICENSE                       # MIT License file (open source license)
+├── 📜 Link.txt                      # Test URLs/links for development and testing
+├── 📜 .dockerignore                 # Docker ignore rules (files to exclude from Docker builds)
+├── 📜 CODE_OF_CONDUCT.md            # Community code of conduct guidelines
+├── 📜 CONTRIBUTING.md               # Contribution guidelines for developers
+├── 📜 docker-compose.yml            # Docker Compose configuration for multi-container setup
+├── 📜 Dockerfile                    # Docker container build instructions
+├── 📜 project structure             # Project structure notes (this file)
+├── 📜 README.md                     # Project documentation and setup instructions
+├── 📜 requirements.txt              # Python dependencies list (pip install)
+├── 📂 RAG_bot/                      # Main application package
+│   ├── 📜 bot_config.py             # Bot configuration & constants (settings, defaults)
+│   ├── 📜 bot_handlers.py           # Telegram bot handlers (message processing logic)
+│   ├── 📜 bot_main.py               # Main application entry point (bot startup)
+│   ├── 📜 bot_utils.py              # Utility functions (helpers, common utilities)
+│   ├── 📜 indexer.py                # Document indexing logic (text processing, chunking)
+│   └── 📜 Requests.py               # OpenAI API requests handler (API communication)

@@ -1,0 +1,17 @@
+# 示例 URL 列表文件
+# 每行一个 URL，以 http:// 或 https:// 开头
+# 以 # 开头的行会被忽略
+
+# 示例：技术文档
+https://docs.python.org/3/tutorial/index.html
+https://www.langchain.com/
+
+# 示例：新闻文章
+# https://example.com/news/article1
+# https://example.com/news/article2
+
+# 使用说明：
+# 1. 复制此文件并重命名
+# 2. 替换为你自己的 URL
+# 3. 在"历史知识库"标签页选择"添加 URL 列表文件"
+# 4. 选择你的文件并构建知识库

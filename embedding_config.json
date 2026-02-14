@@ -1,0 +1,5 @@
+{
+  "model_type": "huggingface",
+  "model_name": "paraphrase-multilingual-MiniLM-L12-v2",
+  "device": "cpu"
+}
