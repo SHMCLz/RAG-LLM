@@ -1,5 +1,5 @@
-import os
 from __future__ import annotations
+import os
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from typing import Optional, Dict, Any, List
@@ -13,7 +13,7 @@ from clinical_rag.core.pipeline import DeploymentPipeline
 from clinical_rag.core.kb_demo import demo_segments
 from clinical_rag.core.kb_loader import load_segments_jsonl
 
-app = FastAPI(title="Clinical RAG (Deployment-consistent)", version="4.0.0")
+app = FastAPI(title="Clinical RAG (Deployment-consistent)", version="2025.02.15")
 
 settings = Settings()
 ADMIN_TOKEN = os.getenv('ADMIN_TOKEN','')
@@ -49,7 +49,16 @@ class ApproveRequest(BaseModel):
 
 @app.get("/health")
 def health() -> Dict[str, Any]:
-    return {"ok": True}
+    # Expose the dense embedding model actually loaded at runtime so that the
+    # multilingual bge-m3 encoder described in the manuscript can be verified
+    # directly (e.g. by reviewers) without inspecting the source. bge-m3 has an
+    # embedding dimension of 1024.
+    return {
+        "ok": True,
+        "dense_model": getattr(retriever, "dense_model_name", None),
+        "dense_dim": getattr(retriever, "dense_dim", None),
+        "dense_enabled": bool(getattr(retriever, "_dense", None)),
+    }
 
 @app.post("/ask", response_model=AskResponse)
 def ask(req: AskRequest):

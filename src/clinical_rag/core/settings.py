@@ -1,7 +1,16 @@
 from __future__ import annotations
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 import os
 from pathlib import Path
+from typing import List
+
+
+def _default_allowlist() -> List[str]:
+    raw = os.getenv(
+        "EXTERNAL_SOURCE_ALLOWLIST",
+        "pubmed.ncbi.nlm.nih.gov,ncbi.nlm.nih.gov,guidelines.gov,nccn.org,uroweb.org",
+    )
+    return [h.strip().lower() for h in raw.split(",") if h.strip()]
 
 @dataclass
 class Settings:
@@ -15,14 +24,20 @@ class Settings:
     w_sparse: float = float(os.getenv("W_SPARSE", "0.35"))
     guideline_boost: float = float(os.getenv("GUIDELINE_BOOST", "1.25"))
 
-    # Embeddings (deployment)
-    dense_embed_model: str = os.getenv("DENSE_EMBED_MODEL", "sentence-transformers/all-mpnet-base-v2")
+    # Embeddings (deployment): single multilingual encoder.
+    #   bge-m3 natively supports both Chinese and English, covering the mixed
+    #   Chinese-English knowledge base and the predominantly Chinese queries.
+    dense_embed_model: str = os.getenv("DENSE_EMBED_MODEL", "BAAI/bge-m3")
+    dense_device: str = os.getenv("DENSE_DEVICE", "cpu")
 
     # External gateway
     enable_external_gateway: bool = os.getenv("ENABLE_EXTERNAL_GATEWAY", "false").lower() == "true"
     external_gateway_url: str = os.getenv("EXTERNAL_GATEWAY_URL", "http://localhost:9100/search")
     external_k: int = int(os.getenv("EXTERNAL_K", "3"))
     external_ttl_seconds: int = int(os.getenv("EXTERNAL_TTL_SECONDS", "600"))
+    # Curated allowlist of vetted external medical sources (comma-separated hosts).
+    # Only results from these hosts are accepted from the outbound gateway.
+    external_source_allowlist: List[str] = field(default_factory=_default_allowlist)
 
     # Local LLM (DeepSeek-R1 intranet service)
     deepseek_base_url: str = os.getenv("DEEPSEEK_BASE_URL", "http://localhost:9000").rstrip("/")

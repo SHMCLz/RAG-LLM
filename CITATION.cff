@@ -1,9 +1,9 @@
-cff-version: 1.2.0
+cff-version: 2.1.0
 title: Clinical RAG System
 message: If you use this software, please cite it.
 type: software
 authors:
   - family-names: Liu
     given-names: Zheng
-version: 6.0.0
-date-released: 2026-02-26
+version: 2025.02.15
+date-released: 2025-02-15

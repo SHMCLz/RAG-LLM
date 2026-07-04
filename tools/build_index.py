@@ -33,7 +33,9 @@ def main():
     ap.add_argument("--min-df", type=int, default=2)
     ap.add_argument("--ngram-max", type=int, default=2)
     ap.add_argument("--dense", action="store_true", help="also build dense FAISS index if deps available")
-    ap.add_argument("--dense-model", default="sentence-transformers/all-mpnet-base-v2")
+    # Single multilingual encoder (matches retrieval core): bge-m3 handles both
+    # Chinese and English content.
+    ap.add_argument("--dense-model", default="BAAI/bge-m3")
     args = ap.parse_args()
 
     seg_path = Path(args.segments)
@@ -63,7 +65,7 @@ def main():
             index.add(embs)
             faiss.write_index(index, str(idx_dir / "faiss.index"))
             (idx_dir / "ids.json").write_text(json.dumps(seg_ids), encoding="utf-8")
-            print(f"Saved FAISS -> {idx_dir/'faiss.index'}")
+            print(f"Saved FAISS -> {idx_dir/'faiss.index'} (n={len(seg_ids)}, model={args.dense_model})")
         except Exception as e:
             print(f"Dense index skipped: {e}")
 
